@@ -1,0 +1,23 @@
+:root {
+	--colorBlack: #333845;
+	--colorBlackDark: #2a3848;
+	--colorBlackTransparent: rgba(31, 31, 31, 0.8);
+	
+	--colorWhite: #ffffff;
+	--colorWhiteTransparent: rgba(255, 255, 255, 0.7);
+	
+	--colorYellow: #ffd600;
+	
+	--colorBlue: #ddebf9;
+	
+	--colorMilk: #f8f8f8;
+	
+	--colorGray: #687186;
+	--colorGrayLight: #919498;
+	--colorGrayAdd: #4e5762;
+	--colorGrayExtra: #f4f4f4;
+	--colorGrayExt: #333c46;
+	
+	--colorIndigoDye: #272f37;
+	--colorIndigoDeep: #1d2630;
+}

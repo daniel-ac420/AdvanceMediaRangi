@@ -1,0 +1,311 @@
+﻿.header {
+	padding-top: 22.5px;
+	margin-bottom: 177px;
+}
+
+.header-top {
+	display: flex;
+	align-items: center;
+	margin-bottom: 115px;
+}
+
+.logo-wrapper {
+	display: flex;
+	align-items: center;
+	gap: 25px;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	margin-right: 55px;
+	transition: all 0.75s;
+}
+
+.logo:hover {
+	filter: brightness(0.8);
+    transform: none;
+	border: none;
+}
+
+.logo:focus {
+	filter: brightness(1.25);
+    transform: scale(1.1);
+	outline: 2px solid var(--colorBlackDark);
+	outline-offset: 10px;
+}
+
+.logo__image {
+	transition: all 0.75s;
+}
+
+.logo__text {
+	margin-left: 10px;
+	font-weight: 800;
+	font-size: 24px;
+	color: var(--colorBlackDark);
+	transition: all 0.75s;
+}
+
+.logo:hover .logo__image {
+	filter: invert(0.5);
+}
+
+.logo:hover .logo__text {
+	color: var(--colorYellow);
+}
+
+.navigation-menu__list {
+	display: flex;
+	align-items: center;
+	gap: 50px;
+}
+
+.header-search__button {
+	margin-left: auto;
+	width: 30px;
+	height: 50px;
+	background-color: transparent;
+	background-image: url("../icons/header/header-search.svg");
+	background-size: 21px;
+	background-position: center;
+	background-repeat: no-repeat;
+	border: none;
+}
+
+.header-search__button:hover {
+	border: none;
+	transform: scale(1.25);
+}
+
+.subtitle {
+	font-family: "Segoe UI", Arial, sans-serif;
+	font-size: 20px;
+	line-height: 1.6;
+	color: var(--colorGray);
+}
+
+.header .subtitle {
+	max-width: 570px;
+}
+
+.header .button {
+	margin-top: 48px;
+	padding: 17px 55px;
+}
+
+.header .button:hover {
+	transform: none;
+}
+
+.mobile-menu-button {
+	display: none;
+}
+
+.mobile-menu {
+	display: none;
+}
+
+#activities-all {
+	display: flex;
+	align-items: center;
+	gap: 11px;
+	padding: 11px 23px 13px 23px;
+	font-weight: 500;
+	background-color: var(--colorYellow);
+	border: 2px solid transparent;
+	border-radius: 100px;
+	cursor: pointer;
+	transition: all 0.75s;
+}
+
+#activities-all:hover .navigation-menu__link {
+	transform: none;
+	border: none;
+}
+
+#activities-all:hover {
+	border: 2px solid var(--colorYellow);
+	background-color: transparent;
+}
+
+
+
+@media (max-width: 1280px) {
+	
+	.header {
+		margin-bottom: 125px;
+	}
+	
+	.header-top {
+		margin-bottom: 80px;
+	}
+	
+	.navigation-menu__list {
+		gap: 25px;
+	}
+	
+}
+/* ↑↑↑ 1280px ↑↑↑ */
+
+
+
+@media (max-width: 1180px) {
+	
+	#activities-all {
+		gap: 10px;
+		padding: 10px 20px;
+	}
+
+	.navigation-menu__list {
+		gap: 20px;
+	}
+	
+}
+/* ↑↑↑ 1180px ↑↑↑ */
+
+
+
+@media (max-width: 1024px) {
+	
+	.header-top {
+		margin-bottom: 40px;
+	}
+
+	#activities-all {
+		gap: 5px;
+		padding: 10px;
+	}
+	
+}
+/* ↑↑↑ 1024px ↑↑↑ */
+
+
+
+@media (max-width: 768px) {
+
+	.mobile-menu-button {
+		display: block;
+		width: 23px;
+		height: 17px;
+		margin-right: 18px;
+		background-image: url("../icons/header/mobile-menu.svg");
+		background-color: unset;
+		border: unset;
+		cursor: pointer;
+		transition: all 0.75s;
+	}
+	
+	.mobile-menu-button:hover {
+		transform: scale(1.25);
+	}
+	
+	.mobile-menu-button:focus {
+		border-radius: 5px;
+		outline-offset: 10px;
+		outline-color: var(--colorBlack);
+	}
+	
+	.header .navigation-menu {
+		display: none;
+	}
+	
+	.mobile-menu {
+		position: fixed;
+		inset: 0;
+		z-index: 1000;
+		display: none;
+		padding: 80px;
+		background-color: var(--colorWhite);
+	}
+
+	.mobile-menu.active {
+		display: block;
+	}
+
+	.mobile-menu .logo {
+		justify-content: center;
+		margin: 0 auto 30px;
+	}
+
+	.mobile-menu .navigation-menu__list {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.mobile-menu .navigation-menu__link {
+		padding: 10px 40px;
+		border-bottom: 1px solid transparent;
+	}
+	
+	.mobile-menu .navigation-menu__link:hover {
+		border-bottom: 1px solid var(--colorYellow);
+	}
+
+	.button-close {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		padding: 20px;
+		font-size: 40px;
+		cursor: pointer;
+		transition: all 0.75s;
+	}
+	
+	.button-close:hover {
+		transform: scale(1.25);
+	}
+
+}
+/* ↑↑↑ 768px ↑↑↑ */
+
+
+
+@media (max-width: 534px) {
+	
+	.header {
+		margin-bottom: 80px;
+	}
+	
+	.subtitle {
+		font-size: 16px;
+	}
+		
+	.header .button {
+		margin-top: 25px;
+		padding: 15px 35px;
+	}
+
+}
+/* ↑↑↑ 534px ↑↑↑ */
+
+
+
+@media (max-width: 375px) {
+	
+	.mobile-menu {
+		padding: 80px 60px;
+	}
+
+	.button-close {
+		top: 0;
+		right: 0;
+	}
+
+}	
+/* ↑↑↑ 375px ↑↑↑ */
+
+
+
+@media (max-width: 320px) {
+	
+	.mobile-menu {
+		padding: 80px 40px;
+	}
+
+	.button-close {
+		padding: 10px;
+	}
+	
+}	
+/* ↑↑↑ 320px ↑↑↑ */
